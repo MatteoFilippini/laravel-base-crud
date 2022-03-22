@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <h2>index</h2>
+    <h2>Comics</h2>
+    <ul>
+        @foreach($comics as $comic)
+        <li><a href="#">{{ $comic->title }}</a></li>
+        @endforeach
+    </ul>
+
 </body>
 
 </html>
