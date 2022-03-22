@@ -9,13 +9,9 @@
 </head>
 
 <body>
-    <h2>Comics</h2>
-    <ul>
-        @foreach($comics as $comic)
-        <li><a href="{{ route('comics.show',$comic->id) }}">{{ $comic->title }}</a></li>
-        @endforeach
-    </ul>
-
+    <h1>{{ $comic->title }}</h1>
+    <p>{{ $comic->price }}</p>
+    <a href="{{ route('comics.index') }}">Tutti i comics</a>
 </body>
 
 </html>
