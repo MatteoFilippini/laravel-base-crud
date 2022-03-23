@@ -11243,6 +11243,59 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.container {
-  background: red;
+header .t-header {
+  background-color: #0282f9;
+  width: 100%;
+}
+header .t-header .content {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .b-header .navbar-light .navbar-nav .nav-link {
+  color: #212121;
+}
+header .b-header .navbar-light .navbar-nav .nav-link:hover {
+  color: #0282f9;
+}
+header .b-header li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+header .jumbo {
+  height: 400px;
+  background-image: url(../images/jumbotron.jpg);
+}
+
+footer .t-footer {
+  height: 400px;
+  background-image: url(../images/footer-bg.jpg);
+}
+footer .b-footer {
+  background-color: #303030;
+  padding: 20px;
+}
+footer .b-footer .butt {
+  border: 2px solid #0282f9;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .b-footer .footer-icons span {
+  text-transform: uppercase;
+  color: #0282f9;
+  font-weight: bold;
+  margin-right: 20px;
+}
+footer .b-footer .footer-icons a {
+  text-decoration: none;
+  margin-right: 18px;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
 }

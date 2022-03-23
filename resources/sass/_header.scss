@@ -1,0 +1,30 @@
+header {
+    .t-header {
+        // height: 20px;
+        background-color: $light_blue;
+        width: 100%;
+        .content {
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    .b-header {
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(33, 33, 33);
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: $light_blue;
+        }
+        li {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+    .jumbo {
+        height: 400px;
+        background-image: url(../images/jumbotron.jpg);
+    }
+}

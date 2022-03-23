@@ -1,1 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
+@import "var.scss";
+@import "header.scss";
+@import "footer.scss";
+
+* {
+    font-family: "Open Sans", sans-serif;
+}

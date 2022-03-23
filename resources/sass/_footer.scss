@@ -1,0 +1,30 @@
+footer {
+    .t-footer {
+        height: 400px;
+        background-image: url(../images/footer-bg.jpg);
+    }
+    .b-footer {
+        background-color: rgb(48, 48, 48);
+        padding: 20px;
+        .butt {
+            border: 2px solid $light_blue;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .footer-icons {
+            span {
+                text-transform: uppercase;
+                color: $light_blue;
+                font-weight: bold;
+                margin-right: 20px;
+            }
+            a {
+                text-decoration: none;
+                margin-right: 18px;
+            }
+        }
+    }
+}
