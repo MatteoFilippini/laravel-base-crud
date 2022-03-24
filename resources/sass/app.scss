@@ -2,6 +2,11 @@
 @import "var.scss";
 @import "header.scss";
 @import "footer.scss";
+@import "comics/show.scss";
+@import "comics/home.scss";
+@import "comics/index.scss";
+@import "comics/create.scss";
+@import "comics/edit.scss";
 
 * {
     font-family: "Open Sans", sans-serif;

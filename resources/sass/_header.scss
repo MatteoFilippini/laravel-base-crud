@@ -1,6 +1,5 @@
 header {
     .t-header {
-        // height: 20px;
         background-color: $light_blue;
         width: 100%;
         .content {
@@ -10,7 +9,7 @@ header {
             text-transform: uppercase;
         }
     }
-    .b-header {
+    .m-header {
         .navbar-light .navbar-nav .nav-link {
             color: rgb(33, 33, 33);
         }
@@ -24,7 +23,9 @@ header {
         }
     }
     .jumbo {
-        height: 400px;
+        height: 500px;
         background-image: url(../images/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

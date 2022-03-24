@@ -11253,20 +11253,22 @@ header .t-header .content {
   font-weight: bold;
   text-transform: uppercase;
 }
-header .b-header .navbar-light .navbar-nav .nav-link {
+header .m-header .navbar-light .navbar-nav .nav-link {
   color: #212121;
 }
-header .b-header .navbar-light .navbar-nav .nav-link:hover {
+header .m-header .navbar-light .navbar-nav .nav-link:hover {
   color: #0282f9;
 }
-header .b-header li {
+header .m-header li {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
 }
 header .jumbo {
-  height: 400px;
+  height: 500px;
   background-image: url(../images/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer .t-footer {
@@ -11294,6 +11296,95 @@ footer .b-footer .footer-icons span {
 footer .b-footer .footer-icons a {
   text-decoration: none;
   margin-right: 18px;
+}
+
+.main-show .picture {
+  height: 70px;
+  background-color: #0282f9;
+  position: relative;
+}
+.main-show .picture .card-s {
+  width: 180px;
+  position: absolute;
+  bottom: 50%;
+}
+.main-show .picture .card-s img {
+  height: auto;
+  max-width: 100%;
+}
+.main-show .general .desc h2, .main-show .general .desc .h2 {
+  color: #273f54;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.main-show .general .desc .banner {
+  background-color: #55ba59;
+}
+.main-show .general .desc .banner p {
+  color: #affa97;
+}
+
+.move {
+  -webkit-animation: slide 500ms linear infinite;
+          animation: slide 500ms linear infinite;
+}
+@-webkit-keyframes slide {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slide {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.main-home {
+  background-color: #1c1c1c;
+}
+.main-home h2, .main-home .h2 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.main-index {
+  background-color: #1c1c1c;
+}
+.main-index h2, .main-index .h2 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.main-index a {
+  text-decoration: none;
+}
+
+.main-create h3, .main-create .h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0282f9;
+}
+.main-create a {
+  text-decoration: none;
+  color: #0282f9;
+}
+.main-create label {
+  color: #273f54;
+  font-weight: bold;
+}
+
+.main-create label {
+  color: #273f54;
+  font-weight: bold;
 }
 
 * {

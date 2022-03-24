@@ -37,8 +37,16 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required|string|unique:comics|max:3',
+            'description' => 'required',
+            'thumb' => 'required',
+            'price' => 'required',
+            'series' => 'required',
+            'sale_date' => 'required',
+            'type' => 'required'
+        ]);
         $comic = Comic::create($request->all());
-
         return redirect()->route('comics.show', $comic);
     }
 
@@ -74,8 +82,21 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $data = $request->all();
-        $comic->update($data);
+        // dd($request->all(':attribute'));
+        $comic->update($request->all());
+        $request->validate(
+            [
+                'title' => 'required|string|unique:comics|max:3',
+                'description' => 'required',
+                'thumb' => 'required',
+                'price' => 'required',
+                'series' => 'required',
+                'sale_date' => 'required',
+                'type' => 'required'
+            ],
+            ['max' => 'Il campo :attribute e obbligatorio']
+        );
+        $comic = Comic::create($request->all());
         return redirect()->route('comics.show', compact('comic'));
     }
 

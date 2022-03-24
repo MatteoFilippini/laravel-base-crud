@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-    <div class="b-header">
+    <div class="m-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand " href="{{ route('home') }}"><img class="img-fluid me-5" src="{{ asset('images/dc-logo.png') }}" alt="dc-logo"></a>
@@ -58,4 +58,5 @@
     </div>
     <div class="jumbo">
     </div>
+
 </header>

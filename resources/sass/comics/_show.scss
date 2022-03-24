@@ -1,0 +1,44 @@
+.main-show {
+    .picture {
+        height: 70px;
+        background-color: $light_blue;
+        position: relative;
+        .card-s {
+            width: 180px;
+            position: absolute;
+            bottom: 50%;
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .general {
+        .desc {
+            h2 {
+                color: $dark_blue;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .banner {
+                background-color: #55ba59;
+                p {
+                    color: #affa97;
+                }
+            }
+        }
+    }
+}
+.move {
+    animation: slide 500ms linear infinite;
+
+    @keyframes slide {
+        from {
+            margin-left: 10px;
+        }
+
+        to {
+            margin-left: 0%;
+        }
+    }
+}
